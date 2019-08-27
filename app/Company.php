@@ -20,6 +20,6 @@ class Company extends Authenticatable
     ];
 
     public function users() {
-        return $this->hasMany('User');
+        return $this->hasMany('App\User');
     }
 }
