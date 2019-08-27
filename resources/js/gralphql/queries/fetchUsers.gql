@@ -1,0 +1,11 @@
+query Users {
+  users {
+    id
+    name
+    email
+    company_id
+    company {
+        name
+    }
+  }
+}
