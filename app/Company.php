@@ -6,7 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Company extends Authenticatable
 {
     use Notifiable;
 
@@ -16,10 +16,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email',
+        'name',
     ];
 
-    public function company() {
-        return $this->belongTo('Company');
+    public function users() {
+        return $this->hasMany('User');
     }
 }
