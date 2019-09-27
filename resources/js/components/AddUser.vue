@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <ApolloMutation
-            :mutation="require('../gralphql/mutations/addUser.gql')"
+            :mutation="require('../graphql/mutations/addUser.gql')"
             :variables="{ input }"
             @done="onDone"
         >

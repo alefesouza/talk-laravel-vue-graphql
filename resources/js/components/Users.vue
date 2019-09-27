@@ -3,7 +3,7 @@
         <h1>Lista de usuários</h1>
 
         <ApolloQuery
-            :query="require('./../gralphql/queries/fetchUsers.gql')"
+            :query="require('./../graphql/queries/fetchUsers.gql')"
         >
             <template v-slot="{ result: { loading, error, data } }">
                 <!-- Loading -->
